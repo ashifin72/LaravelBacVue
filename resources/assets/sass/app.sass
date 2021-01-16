@@ -1,0 +1,47 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito')
+
+// Variables
+@import 'variables'
+@import 'config'
+// Bootstrap
+//@import '../../../node_modules/bootstrap/scss/bootstrap'
+.ash-catalog-item
+  text-align: center
+  margin-bottom: 50px
+  display: flex
+  img
+    width: 100px
+    margin: 10px auto
+  button
+    width: 200px
+    margin: 10px auto
+.ash-cart
+  &-item
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 15px
+    img
+      height: 80px
+    .quantity__block
+      user-select: none
+      text-align: center
+      .quantity__num
+        margin: 0px 10px
+      .quantity__btn
+        cursor: pointer
+        padding: 5px 10px
+        border: 1px solid $accent
+        border-radius: $radius
+  &__total
+    position: fixed
+    bottom: 0
+    right: 0
+    left: 0
+    padding: $padding * 2
+    display: flex
+    justify-content: center
+    background-color: $green
+    color: $body-bg
